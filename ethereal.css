@@ -1,0 +1,31 @@
+::selection {
+  background: #200222;
+  color: coral;
+}
+
+:root {
+  color: #200222;
+  background: skyblue;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: deepskyblue;
+  }
+}
+
+@media (prefers-contrast: less) {
+  :root {
+    color: #33113d;
+  }
+}
+
+:any-link {
+  color: #50a;
+  outline-color: #50a;
+}
+
+mark {
+  color: #11111d;
+  background: coral;
+}
