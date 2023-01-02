@@ -1,31 +1,13 @@
 ::selection {
-  background: #200222;
+  background: #213;
   color: coral;
 }
 
 :root {
-  color: #200222;
-  background: skyblue;
+  color: #050305;
+  background-color: violet;
+  background-image: linear-gradient(.666turn, orchid, darkorchid, violet);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    background: deepskyblue;
-  }
-}
-
-@media (prefers-contrast: less) {
-  :root {
-    color: #33113d;
-  }
-}
-
-:any-link {
-  color: #50a;
-  outline-color: #50a;
-}
-
-mark {
-  color: #11111d;
-  background: coral;
-}
+:any-link { color: currentColor }
+:focus { outline-color: currentColor }

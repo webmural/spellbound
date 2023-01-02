@@ -1,17 +1,18 @@
 html {
   font-family: sans-serif;
-  font-size: calc(1em + 1vmin + 2vmax);
+  font-size: max(1em, 3vmax);
+  line-height: 1.618;
 }
 
 body {
-  padding: 1em;
   display: flex;
   flex-flow: column;
   margin: auto;
+  padding: calc(1em + 1vmax);
 }
 
 article {
-  line-height: 1.5;
+  min-height: 100vh;
 }
 
 ul {
@@ -26,20 +27,12 @@ h2 {
   font-size: inherit;
 }
 
-p:not(:first-of-type) {
-  margin-block-start: 0;
-}
-
-p:not(:last-of-type) {
-  margin-block-end: 0;
-}
-
 :any-link {
   text-decoration-style: dotted;
   text-decoration-thickness: .1em;
 }
 
-:any-link:hover {
+:hover {
   text-decoration-style: solid;
 }
 
