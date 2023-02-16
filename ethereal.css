@@ -1,13 +1,30 @@
 ::selection {
-  background: #213;
-  color: coral;
+  background: #eec;
+  color: rebeccapurple;
+  text-shadow: none;
 }
 
 :root {
-  color: #050305;
-  background-color: violet;
-  background-image: linear-gradient(.666turn, orchid, darkorchid, violet);
+  color: #eec;
+  background-color: darkviolet;
+  background-image: linear-gradient(.666turn, darkorchid, darkviolet);
 }
 
-:any-link { color: currentColor }
-:focus { outline-color: currentColor }
+:any-link {
+  text-shadow: 0 -1ch 0 blueviolet;
+  color: inherit;
+}
+
+:focus {
+  outline-color: currentColor;
+}
+
+.amber {
+  text-shadow: 0 -1ch 0 #f69;
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    background-image: linear-gradient(.666turn, #518, #318);
+  }
+}
